@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/background_activated">
+
+    <ImageView
+        android:id="@+id/call_list_item_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/phone" />
+
+    <LinearLayout
+        android:id="@+id/call_list_item_name_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/call_list_item_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/call_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/call_list_item_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="phone number" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call_list_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/call_list_item_name_phone"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+      	android:layout_centerInParent="true"
+        android:paddingRight="8dp"
+        android:textSize="14sp"
+        android:text="date" />
+
+</RelativeLayout>
